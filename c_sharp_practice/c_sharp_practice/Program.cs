@@ -10,6 +10,15 @@ namespace c_sharp_practice
     {
         static void Main(string[] args)
         {
+            // For InterfaceDemo.cs 
+            InterfaceDemo Idemo = new InterfaceDemo();
+            Idemo.RunDemo1();
+            System.Console.WriteLine();
+            Idemo.RunDemo2();
+
+
+            System.Console.ReadLine();
         }
+
     }
 }
