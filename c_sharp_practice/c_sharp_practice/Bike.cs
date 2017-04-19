@@ -8,6 +8,7 @@ namespace c_sharp_practice
 {
     class Bike : IMachine
     {
+        public string color { get; set; }
         void IMachine.Start()
         {
             System.Console.WriteLine("This Bike Starts");

@@ -10,5 +10,6 @@ namespace c_sharp_practice
     {
         void Start();
         void Stop();
+        string color { get; set; }
     }
 }

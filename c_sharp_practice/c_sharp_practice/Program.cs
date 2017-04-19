@@ -13,9 +13,12 @@ namespace c_sharp_practice
             // For InterfaceDemo.cs 
             InterfaceDemo Idemo = new InterfaceDemo();
             Idemo.RunDemo1();
-            System.Console.WriteLine();
-            Idemo.RunDemo2();
-
+            //System.Console.WriteLine();
+            //Idemo.RunDemo2();
+            //System.Console.WriteLine();
+            //Idemo.RunDemo3();
+            //System.Console.WriteLine();
+            //Idemo.RunDemo4();
 
             System.Console.ReadLine();
         }
