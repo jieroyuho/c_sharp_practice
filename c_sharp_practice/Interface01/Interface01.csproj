@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2EAB3BC6-7897-4A1C-920D-FEDBE679A2B2}</ProjectGuid>
+    <ProjectGuid>{4CA4F2EF-2AA3-4CFF-9780-5F95E7FD237B}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>c_sharp_practice</RootNamespace>
