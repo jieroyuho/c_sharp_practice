@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections;
-
+//
 // Simple business object.
 public class Person
 {
