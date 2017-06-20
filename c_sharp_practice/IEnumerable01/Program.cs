@@ -22,6 +22,15 @@ namespace IEnumerable01
             Console.ReadLine();
         }
     }
+    public static class A
+    {
+        public static void test()
+        {
+            return ;
+        }
+
+
+    }
 }
 /* This code produces output similar to the following:
  *
