@@ -27,6 +27,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web Form Test", "ChangeToDo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OfficeTest", "OfficeTest\OfficeTest.csproj", "{99EB0876-BA51-463A-8111-59A4491E812F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedList01", "LinkedList01\LinkedList01.csproj", "{B2FBB38D-E141-458B-8D5D-80C876EFD38E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedList01Tests", "LinkedList01Tests\LinkedList01Tests.csproj", "{538E879B-63A3-4FDB-B0A3-B0FA12A38784}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,6 +75,14 @@ Global
 		{99EB0876-BA51-463A-8111-59A4491E812F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99EB0876-BA51-463A-8111-59A4491E812F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99EB0876-BA51-463A-8111-59A4491E812F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2FBB38D-E141-458B-8D5D-80C876EFD38E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2FBB38D-E141-458B-8D5D-80C876EFD38E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2FBB38D-E141-458B-8D5D-80C876EFD38E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2FBB38D-E141-458B-8D5D-80C876EFD38E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{538E879B-63A3-4FDB-B0A3-B0FA12A38784}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{538E879B-63A3-4FDB-B0A3-B0FA12A38784}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{538E879B-63A3-4FDB-B0A3-B0FA12A38784}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{538E879B-63A3-4FDB-B0A3-B0FA12A38784}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
