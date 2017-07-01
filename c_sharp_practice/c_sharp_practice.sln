@@ -47,6 +47,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructure1.1Tests", "Da
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Queue01_Generic", "Queue01_Generic\Queue01_Generic.csproj", "{566A3DF1-F7AC-4DEF-A3A7-4D8062D52DB2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tree01", "Tree01\Tree01.csproj", "{9C2F1930-5408-48B1-A1C1-8CE36E6B4FE9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -131,6 +133,10 @@ Global
 		{566A3DF1-F7AC-4DEF-A3A7-4D8062D52DB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{566A3DF1-F7AC-4DEF-A3A7-4D8062D52DB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{566A3DF1-F7AC-4DEF-A3A7-4D8062D52DB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C2F1930-5408-48B1-A1C1-8CE36E6B4FE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C2F1930-5408-48B1-A1C1-8CE36E6B4FE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C2F1930-5408-48B1-A1C1-8CE36E6B4FE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C2F1930-5408-48B1-A1C1-8CE36E6B4FE9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
