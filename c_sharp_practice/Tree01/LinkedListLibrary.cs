@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,25 +9,54 @@ namespace Tree01
 {
     public class LinkedList<T>
     {
-        protected class Node
+       protected class Node
         {
             public Node Next { get; set; }
             public T Value { get; set; }
         }
 
         protected Node _head;
+        protected int _size;
 
         protected Node Head { get { return _head; } set { _head = value; } }
+
+        public int Size {get{ return _size; }}
 
         public LinkedList()
         {
             Head = null;
+            _size = 0;
         }
         public LinkedList(T value)
         {
             Node newNode = new Node();
             newNode.Value = value;
             Head = newNode;
+            _size++;
+        }
+
+        public LinkedList(int number)
+        {
+            Node newNode = new Node();
+            newNode.Value = default(T);
+            Head = newNode;
+            _size = number;
+            for (int i = 1; i < number; i++)
+            {
+                this.AddLast(default(T));
+            }
+        }
+
+        public LinkedList(int number, T value)
+        {
+            Node newNode = new Node();
+            newNode.Value = value;
+            Head = newNode;
+            _size = number;
+            for (int i = 1; i < number; i++)
+            {
+                this.AddLast(value);
+            }
         }
 
         public bool IsEmpty()
@@ -59,11 +89,11 @@ namespace Tree01
             if (IsEmpty())
             {
                 Head = newNode;
-                //Tail = newNode;
                 return;
             }
             newNode.Next = Head;
             Head = newNode;
+            _size++;
 
         }
 
@@ -89,7 +119,7 @@ namespace Tree01
             result = Head.Value;
             Head = Head.Next;
             //Console.WriteLine("Pop: {0}", result);
-
+            _size--;
             return result;
         }
 
@@ -117,8 +147,6 @@ namespace Tree01
 
             return current.Value;
         }
-
-
         public virtual void AddLast(T value)
         {
             Node newNode = new Node();
@@ -134,6 +162,7 @@ namespace Tree01
                 current = current.Next;
             }
             current.Next = newNode;
+            _size++;
         }
 
         public virtual T GetLast()
@@ -159,7 +188,7 @@ namespace Tree01
                 //Console.WriteLine("This List is empty!");
                 return default(T);
             }
-
+            _size--;
             if (Head.Next == null)
             {
                 T tmp = Head.Value;
@@ -175,101 +204,6 @@ namespace Tree01
             }
             result = current.Value;
             current.Next = null;
-            return result;
-        }
-
-
-    }
-
-    public class LinkedListTail<T> : LinkedList<T>
-    {
-        protected Node _tail;
-
-        protected Node Tail { get { return _tail; } set { _tail = value; } }
-
-        public LinkedListTail()
-        {
-            Head = null;
-            Tail = null;
-        }
-        public LinkedListTail(T value)
-        {
-            Node newNode = new Node();
-            newNode.Value = value;
-            Head = newNode;
-            Tail = newNode; ;
-        }
-
-        public override void AddFirst(T value)
-        {
-            Node newNode = new Node();
-            newNode.Value = value;
-            if (IsEmpty())
-            {
-                Head = newNode;
-                Tail = newNode;
-                return;
-            }
-            newNode.Next = Head;
-            Head = newNode;
-
-        }
-
-
-
-        public override void AddLast(T value)
-        {
-            Node newNode = new Node();
-            newNode.Value = value;
-
-            if (Head == null)
-            {
-                Head = newNode;
-                Tail = newNode;
-            }
-
-            Tail.Next = newNode;
-            Tail = newNode;
-
-        }
-
-        public override T GetLast()
-        {
-            if (IsEmpty())
-            {
-                //Console.WriteLine("This List is empty!");
-                return default(T);
-            }
-            return Tail.Value;
-        }
-
-        public override T PopLast()
-        {
-            if (Head == null)
-            {
-                //Console.WriteLine("This List is empty!");
-                return default(T);
-            }
-
-            T result;
-            result = Tail.Value;
-            Node current = Head;
-            if (Tail != null && Head == Tail)
-            {
-                Head = null;
-                Tail = null;
-                return result;
-            }
-
-            while (current.Next != Tail)
-            {
-                current = current.Next;
-            }
-            current.Next = null;
-            Tail = current;
-
-            //Console.WriteLine("Pop Last: {0}", result);
-
             return result;
         }
 

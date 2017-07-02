@@ -9,19 +9,35 @@ namespace Tree01
     {
         static void Main(string[] args)
         {
-            Node root = new Node() { value = 1 };
-            Node c1 = new Node() { value = 2 };
-            Node c2 = new Node() { value = 3 };
+            int n = 5;
 
-            root.AddChild(c1);
-            c1.AddChild(c2);
-           
-            Console.WriteLine("{0}", root.GetNodeHeight() );
-            Console.WriteLine("{0}", c1.GetNodeHeight() );
-            Console.WriteLine("{0}", c2.GetNodeHeight() );
+            List<TreeNode> TheList = new List<TreeNode>();
+
+            TreeNode.BuildList(n, ref TheList);
+
+            int[] l = new int[]{ -1, 0, 4, 0, 3 };
+
+            TreeNode root = TheList[1];
+
+            for (int i = 0; i < 5;  i++)
+            {
+                if (l[i] == -1)
+                {
+                    root = TheList[i];
+                }
+                else
+                {
+                    TreeNode cNode = TheList[i];
+                    TreeNode pNode = TheList[l[i]];
+                    TreeNode.AddLink(pNode, cNode);
+                }
+            }
+            Console.WriteLine("{0}", root.GetNodeHeight());
+
 
             Console.ReadLine();
         }
+
 
     }
 }

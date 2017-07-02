@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Tree01
+namespace DataStructure1._2
 {
     class TreeNode
     {
@@ -41,7 +41,7 @@ namespace Tree01
 
                 if (height > Max)
                 {
-                    Max = height;
+                    Max = height; 
                 }
             }
             return Max + 1;
