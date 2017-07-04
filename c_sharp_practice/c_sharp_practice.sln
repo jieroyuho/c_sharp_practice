@@ -53,6 +53,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructure1.2", "DataStr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructure1.2Tests", "DataStructure1.2Tests\DataStructure1.2Tests.csproj", "{EF40921B-13F8-4229-929D-B2FE63BF6E88}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructure1.3", "DataStructure1.3\DataStructure1.3.csproj", "{C450E9CD-00B7-4790-9DE0-F4BDFC4C93FB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -149,6 +151,10 @@ Global
 		{EF40921B-13F8-4229-929D-B2FE63BF6E88}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF40921B-13F8-4229-929D-B2FE63BF6E88}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF40921B-13F8-4229-929D-B2FE63BF6E88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C450E9CD-00B7-4790-9DE0-F4BDFC4C93FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C450E9CD-00B7-4790-9DE0-F4BDFC4C93FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C450E9CD-00B7-4790-9DE0-F4BDFC4C93FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C450E9CD-00B7-4790-9DE0-F4BDFC4C93FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
