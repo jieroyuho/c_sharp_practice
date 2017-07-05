@@ -32,6 +32,22 @@ namespace DataStructure1._3
             return list.IsEmpty();
         }
 
+        public bool IsFull()
+        {
+            if (Count == Buffer)
+                return true;
+            else
+                return false;
+        }
+
+        public bool IsNotFull()
+        {
+            if (Count == Buffer)
+                return false;
+            else
+                return true;
+        }
+
         public int Enqueue(T value)
         {
             if (this.Buffer == this.Count)
@@ -57,6 +73,12 @@ namespace DataStructure1._3
             }
             return result;
         }
+
+        public void TopModify(T value)
+        {
+            list.FirstModify(value);
+        }
+
 
         public T TopByIndex(int offset)
         {

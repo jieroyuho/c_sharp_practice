@@ -226,10 +226,16 @@ namespace LinkedList03_Generic
             {
                 Head = newNode;
                 Tail = newNode;
+                return;
             }
 
-            Tail.Next = newNode;
-            Tail = newNode;
+            if (Head == Tail)
+            {
+                Tail = newNode;
+                Tail.Next = null;
+
+                Head.Next = Tail;
+            }
 
         }
 

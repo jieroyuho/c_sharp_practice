@@ -77,6 +77,19 @@ namespace DataStructure1._3
             return Head.Value;
         }
 
+        public int FirstModify(T value)
+        {
+            if (IsEmpty())
+            {
+                return -1;
+            }
+            else
+            {
+                Head.Value = value;
+                return 0;
+            }
+        }
+
         public T PopFirst()
         {
             if (IsEmpty())
@@ -87,6 +100,9 @@ namespace DataStructure1._3
 
             T result;
             result = Head.Value;
+
+
+
             Head = Head.Next;
             //Console.WriteLine("Pop: {0}", result);
 
@@ -112,7 +128,7 @@ namespace DataStructure1._3
                     Console.WriteLine("Out of the range!");
                     return default(T);
                 }
-                     
+
             }
 
             return current.Value;
@@ -226,10 +242,14 @@ namespace DataStructure1._3
             {
                 Head = newNode;
                 Tail = newNode;
+                return;
             }
+
 
             Tail.Next = newNode;
             Tail = newNode;
+            Tail.Next = null;
+
 
         }
 

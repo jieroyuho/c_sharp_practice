@@ -190,7 +190,7 @@ namespace LinkedList02
         }
 
 
-        public override void AddLast(int value)
+        public override void AddLast(T value)
         {
             Node newNode = new Node();
             newNode.Value = value;
@@ -199,10 +199,16 @@ namespace LinkedList02
             {
                 Head = newNode;
                 Tail = newNode;
+                return;
             }
 
-            Tail.Next = newNode;
-            Tail = newNode;
+            if (Head == Tail)
+            {
+                Tail = newNode;
+                Tail.Next = null;
+
+                Head.Next = Tail;
+            }
 
         }
 
